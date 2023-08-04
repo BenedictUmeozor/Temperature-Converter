@@ -78,7 +78,7 @@ h1 {
 }
 
 button:not(button.active, button:last-child) {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #ccc;
 }
 
 .buttons button:hover:not(.buttons button.active),
