@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Sans-Serif;
+}
+
+body {
+  background-color: #eee;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2rem 0 3rem;
+}
+
+.container {
+  width: 88%;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+.box h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.box input {
+  appearance: none;
+  border: 0;
+  border-bottom: 1.3px solid #ccc;
+  padding: 0.6rem 0;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.box input:focus {
+  outline: none;
+  border-color: #aaa;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 3px;
+  background-color: #ddd;
+}
+
+.buttons button {
+  flex: 1;
+  border: 0;
+  padding: 0.5rem 0.3rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-size: 0.97rem;
+  cursor: pointer;
+}
+
+.buttons button.active {
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+button:not(button.active, button:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.buttons button:hover:not(.buttons button.active),
+button:disabled {
+  background-color: #f4f4f4;
+}
+
+.result {
+  padding: 0.6rem;
+  border-radius: 3px;
+  background-color: #eee;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin-top: 2rem;
+}
